@@ -6,7 +6,7 @@ ARG group_id
 ARG group_name
 
 RUN apt-get update && \
-    apt-get install -y gcc build-essential git cmake libssl-dev libssl1.0.0 libuv1-dev libsqlite3-dev && \
+    apt-get install -y gcc build-essential git cmake libssl-dev libssl1.0.2 libuv1-dev libsqlite3-dev && \
     apt-get install -y vim tmux curl net-tools && \
     mkdir /var/log/lwsws && \
     cd /opt && \
